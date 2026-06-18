@@ -4,9 +4,10 @@ Start Date: June 17, 2026
 
 ## Progress
 
-Day 1 - Browser Rendering Pipeline & Engines - Done(17/05/2026)
+Day 1 - Browser Rendering Pipeline & Engines - Done(17/06/2026)
 
-Day 2 - Browser Landscape & DevTools
+Day 2 - Browser Landscape & DevTools - Done(18/06/2026)
+
 Day 3 - HTML Foundations
 Day 4 - Forms & Accessibility
 Day 5 - CSS Foundations
