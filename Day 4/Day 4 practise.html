@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 4 - Accessible Contact Form</title>
+
+    <meta
+        name="description"
+        content="Accessible contact form built as part of frontend onboarding.">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Form</h1>
+
+        <button
+            type="button"
+            aria-label="Open navigation menu">
+            ☰
+        </button>
+    </header>
+
+    <main>
+
+        <section>
+            <picture>
+                <source
+                    media="(max-width: 600px)"
+                    srcset="profile.png">
+
+                <img
+                    src="profile-large.png"
+                    alt="Profile photograph"
+                    width="300">
+            </picture>
+        </section>
+
+        <section>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="name">Full Name</label>
+                    </p>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        minlength="3"
+                        required>
+
+                    <p>Please enter your full name.</p>
+
+                    <p>
+                        <label for="email">Email Address</label>
+                    </p>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        aria-describedby="email-help">
+
+                    <p id="email-help">
+                        Please enter a valid email address.
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number</label>
+                    </p>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{10}"
+                        required>
+
+                    <p>Enter a 10-digit phone number.</p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Reason for Contact</legend>
+
+                    <input
+                        type="radio"
+                        id="job"
+                        name="reason"
+                        value="job"
+                        required>
+
+                    <label for="job">Job Opportunity</label>
+
+                    <br>
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="project"
+                        name="reason"
+                        value="project">
+
+                    <label for="project">Project Discussion</label>
+
+                    <br>
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="other"
+                        name="reason"
+                        value="other">
+
+                    <label for="other">Other</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+
+                    <p>
+                        <label for="topic">Topic</label>
+                    </p>
+
+                    <select
+                        id="topic"
+                        name="topic"
+                        required>
+
+                        <option value="">Select a topic</option>
+                        <option value="frontend">
+                            Frontend Development
+                        </option>
+                        <option value="ai">
+                            Artificial Intelligence
+                        </option>
+                        <option value="career">
+                            Career Discussion
+                        </option>
+
+                    </select>
+
+                    <p>
+                        <label for="message">Message</label>
+                    </p>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        required></textarea>
+
+                    <p>
+                        Please provide details about your enquiry.
+                    </p>
+
+                </fieldset>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="consent"
+                        name="consent"
+                        required>
+
+                    <label for="consent">
+                        I agree to be contacted regarding this message.
+                    </label>
+                </p>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
