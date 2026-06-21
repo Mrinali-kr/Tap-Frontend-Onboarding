@@ -12,7 +12,8 @@ Day 3 - HTML Foundations - Done (19/06/2026)
 
 Day 4 - Forms & Accessibility (20/06/2026)
 
-Day 5 - CSS Foundations
+Day 5 - CSS Foundations(21/06/2026)
+
 Day 6 - Flexbox
 Day 7 - Grid & Responsive Design
 Day 8 - Project 1 Complete
