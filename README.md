@@ -8,11 +8,11 @@ Day 1 - Browser Rendering Pipeline & Engines - Done(17/06/2026)
 
 Day 2 - Browser Landscape & DevTools - Done(18/06/2026)
 
-Day 3 - HTML Foundations - Done (19/06/2026)
+Day 3 - HTML Foundations - Done(19/06/2026)
 
-Day 4 - Forms & Accessibility (20/06/2026)
+Day 4 - Forms & Accessibility - Done(20/06/2026)
 
-Day 5 - CSS Foundations(21/06/2026)
+Day 5 - CSS Foundations - Done(21/06/2026)
 
 Day 6 - Flexbox
 Day 7 - Grid & Responsive Design
