@@ -1,0 +1,125 @@
+:root {
+    --color-primary: #2563eb;
+    --color-background: #ffffff;
+    --color-surface: #f5f5f5;
+    --color-text: #222222;
+
+    --fs-body: 1rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 1.25rem;
+
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+
+    --radius: 8px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+header,
+main,
+footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    padding: var(--space-lg) 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: var(--space-md) 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.features article {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: var(--space-md) 0;
+}
