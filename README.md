@@ -14,7 +14,8 @@ Day 4 - Forms & Accessibility - Done(20/06/2026)
 
 Day 5 - CSS Foundations - Done(21/06/2026)
 
-Day 6 - Flexbox
+Day 6 - Flexbox - Done(22/06/2026)
+
 Day 7 - Grid & Responsive Design
 Day 8 - Project 1 Complete
 Day 9 - JavaScript Foundations
