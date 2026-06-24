@@ -18,7 +18,8 @@ Day 6 - Flexbox - Done(22/06/2026)
 
 Day 7 - Grid & Responsive Design - Done(23/06/2026)
 
-Day 8 - Project 1 Complete
+Day 8 - Project 1 Complete - Done(24/06/2026)
+
 Day 9 - JavaScript Foundations
 Day 10 - DOM & Events
 Day 11 - Modern JavaScript
