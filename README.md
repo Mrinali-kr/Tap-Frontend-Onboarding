@@ -20,7 +20,8 @@ Day 7 - Grid & Responsive Design - Done(23/06/2026)
 
 Day 8 - Project 1 Complete - Done(24/06/2026)
 
-Day 9 - JavaScript Foundations
+Day 9 - JavaScript Foundations - Done(25/06/2026)
+
 Day 10 - DOM & Events
 Day 11 - Modern JavaScript
 Day 12 - Async JavaScript
