@@ -22,7 +22,8 @@ Day 8 - Project 1 Complete - Done(24/06/2026)
 
 Day 9 - JavaScript Foundations - Done(25/06/2026)
 
-Day 10 - DOM & Events
+Day 10 - DOM & Events - Done(26-06-2026)
+
 Day 11 - Modern JavaScript
 Day 12 - Async JavaScript
 Day 13 - React Fundamentals
