@@ -1,0 +1,1 @@
+console.log("TinyTasks service worker loaded.");

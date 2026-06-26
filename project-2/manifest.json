@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "TinyTasks",
+  "version": "1.0.0",
+  "description": "A simple Chrome extension to manage daily tasks.",
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+
+  "permissions": ["storage"]
+}
