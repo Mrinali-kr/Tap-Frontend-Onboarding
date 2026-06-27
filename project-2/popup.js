@@ -1,21 +1,62 @@
-const button = document.getElementById("btn");
-const heading = document.getElementById("title");
+import { saveTasks, loadTasks } from "./storage.js";
+import { renderTasks } from "./ui.js";
 
-// Load the saved message when the popup opens
-chrome.storage.local.get(["message"], (result) => {
-    if (result.message) {
-        heading.textContent = result.message;
-    }
+const taskInput = document.getElementById("taskInput");
+const addBtn = document.getElementById("addBtn");
+const taskList = document.getElementById("taskList");
+
+let tasks = [];
+
+loadTasks((savedTasks) => {
+    tasks = savedTasks;
+    renderTasks(tasks, taskList);
 });
 
-// Save a message when the button is clicked
-button.addEventListener("click", () => {
+addBtn.addEventListener("click", () => {
 
-    heading.textContent = "Button Clicked!";
+    const text = taskInput.value.trim();
 
-    chrome.storage.local.set({
-        message: "Button Clicked!"
-    });
+    if (!text) return;
 
-    console.log("Message saved!");
+    const newTask = {
+        id: Date.now(),
+        text,
+        completed: false
+    };
+
+    tasks.push(newTask);
+
+    saveTasks(tasks);
+
+    renderTasks(tasks, taskList);
+
+    taskInput.value = "";
+});
+
+
+taskList.addEventListener("click", (event) => {
+
+    const id = Number(event.target.dataset.id);
+
+    // Delete Task
+    if (event.target.classList.contains("delete-btn")) {
+
+        tasks = tasks.filter(task => task.id !== id);
+
+    }
+
+    else if (event.target.classList.contains("task-text")) {
+
+        const task = tasks.find(task => task.id === id);
+
+        if (task) {
+            task.completed = !task.completed;
+        }
+
+    }
+
+    saveTasks(tasks);
+
+    renderTasks(tasks, taskList);
+
 });

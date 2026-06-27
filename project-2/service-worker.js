@@ -1,1 +1,3 @@
-console.log("TinyTasks service worker loaded.");
+chrome.runtime.onInstalled.addListener(() => {
+    console.log("TinyTasks installed successfully!");
+});
