@@ -1,0 +1,34 @@
+{
+  "name": "tiny-json-helper",
+  "version": "1.0.0",
+  "description": "A tiny zero-dependency utility library for safely parsing, validating, formatting, and minifying JSON.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.cjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.js --format esm,cjs",
+    "test": "node test/index.test.js"
+  },
+  "keywords": [
+    "json",
+    "helper",
+    "parser",
+    "formatter",
+    "utility"
+  ],
+  "author": "Mrinali K R",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}

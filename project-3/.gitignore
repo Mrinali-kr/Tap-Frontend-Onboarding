@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# npm package archive
+*.tgz
+
+# Logs
+npm-debug.log*
