@@ -28,5 +28,6 @@ Day 11 - Modern JavaScript - Done(27/06/2026)
 
 Day 12 - Async JavaScript - Done(28/06/2026)
 
-Day 13 - React Fundamentals
+Day 13 - React Fundamentals - Done(29/06/2026)
+
 Day 14 - React & Deployment
